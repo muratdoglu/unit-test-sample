@@ -50,8 +50,7 @@ class MainViewModelTest : TestCase() {
     }
 
     private fun checkAddUserAgeValidation() {
-        viewModel.addUser(User(200, "Hüseyin", "Küçük", 10))
-        viewModel.getAll()
+        viewModel.addUser(User(42, "Hüseyin", "Küçük", 10))
         var addUserResult = viewModel.addUserResult.getOrAwaitValue {
 
         }
@@ -59,8 +58,7 @@ class MainViewModelTest : TestCase() {
     }
 
     private fun checkAddUserNameValidation() {
-        viewModel.addUser(User(200, "T", "Ertürk", 29))
-        viewModel.getAll()
+        viewModel.addUser(User(55, "T", "Ertürk", 29))
         var addUserResult = viewModel.addUserResult.getOrAwaitValue {
 
         }
